@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet Campus Connections, a fictional student-run university club. Explore beginner-friendly workshops, campus meetups and volunteering, then practise an enquiry.">
+  <meta name="theme-color" content="#314532">
+  <title>Campus Connections | Find your people</title>
+  <link rel="icon" href="images/club-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- The four navigation links match the four section IDs below. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Campus Connections home">
+        <img src="images/club-mark.svg" width="48" height="48" alt="">
+        <span>Campus Connections<small>A STUDENT-RUN UNIVERSITY CLUB</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HOME: introduction and two clear next steps, as in the wireframe. -->
+    <section class="hero section" id="home" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="label-line"></span> HOME · A PLACE TO BELONG</p>
+          <h1 id="home-title">Find your people.<br>Try something <em>new.</em></h1>
+          <p class="lead">Campus Connections brings undergraduates together to learn new skills, share good company and give back.</p>
+          <p class="hero-description">New to university? New to clubs? You're in the right place. Start with a little curiosity. We'll take it from there.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#activities">Explore activities <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Ask about joining <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="welcome-note"><span aria-hidden="true">✳</span> All undergraduates welcome. No experience needed.</p>
+        </div>
+        <figure class="hero-figure">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="images/hero-campus.jpg" alt="Students collaborating around a table in a bright campus study space" width="1200" height="1000" fetchpriority="high">
+            <span class="photo-tag">COME AS YOU ARE</span>
+          </div>
+          <figcaption><span>A small first step. A new connection.</span><span aria-hidden="true">01 / CAMPUS LIFE</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT: mission and eligibility beside a local, playable video. -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow"><span class="label-line"></span> ABOUT</p>
+          <h2 id="about-title">University is better<br>when we <em>connect.</em></h2>
+          <p>We're a student-run club with a simple idea: make it easier to meet people and try something worthwhile outside the classroom.</p>
+          <p>Our activities are open to current undergraduates from any course or year. First-year students and first-time club members are especially welcome.</p>
+          <ul class="about-promises">
+            <li><span aria-hidden="true">✓</span> Come on your own or bring a friend</li>
+            <li><span aria-hidden="true">✓</span> Learn at your own pace</li>
+            <li><span aria-hidden="true">✓</span> Ask a question before you join</li>
+          </ul>
+        </div>
+        <div class="about-media">
+          <div class="video-heading"><span>MEET CAMPUS CONNECTIONS</span><span>00:24</span></div>
+          <video controls playsinline preload="metadata" poster="images/intro-poster.jpg" width="960" height="540" aria-label="A 24-second introduction to Campus Connections" aria-describedby="video-description">
+            <source src="videos/club-introduction.mp4" type="video/mp4">
+            Your browser does not support this video. <a href="videos/club-introduction.mp4">Download the introduction</a>.
+          </video>
+          <p class="media-note" id="video-description">Welcome</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES: the club's services, with consistent image/icon/card patterns. -->
+    <section class="activities section" id="activities" aria-labelledby="activities-title">
+      <div class="container">
+        <p class="eyebrow"><span class="label-line"></span> ACTIVITIES</p>
+        <div class="section-intro">
+          <h2 id="activities-title">A little of what you love.<br>A little <em>something new.</em></h2>
+          <p>Make something. Meet someone. Make a difference.<br>Choose a starting point that feels like you.</p>
+        </div>
+        <div class="activity-grid">
+          <article class="activity-card">
+            <div class="activity-image"><img class="activity-photo workshop-photo" src="images/workshop.jpg" width="800" height="520" alt="Students sharing ideas and taking notes around a table" loading="lazy"></div>
+            <div class="card-content">
+              <div class="card-title"><img src="images/icon-workshop.svg" alt="" width="36" height="36"><span class="card-number" aria-hidden="true">01</span></div>
+              <h3>Skill workshops</h3>
+              <p>Build confidence through practical, creative sessions. Try a new skill with friendly guidance, one small step at a time.</p>
+              <dl class="activity-meta"><div><dt>Where</dt><dd>Student hub</dd></div><div><dt>When</dt><dd>Fortnightly</dd></div></dl>
+              <a class="text-link" href="#contact" data-topic="workshops">Ask about workshops <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="activity-card">
+            <div class="activity-image"><img class="activity-photo" src="images/meetup.jpg" width="800" height="520" alt="A group of young people spending time together outdoors" loading="lazy"></div>
+            <div class="card-content">
+              <div class="card-title"><img src="images/icon-meetup.svg" alt="" width="36" height="36"><span class="card-number" aria-hidden="true">02</span></div>
+              <h3>Campus meetups</h3>
+              <p>Take a break from your timetable. Drop in for easy conversation, shared interests and a chance to find familiar faces.</p>
+              <dl class="activity-meta"><div><dt>Where</dt><dd>Campus commons</dd></div><div><dt>When</dt><dd>Weekly</dd></div></dl>
+              <a class="text-link" href="#contact" data-topic="meetups">Ask about meetups <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="activity-card">
+            <div class="activity-image"><img class="activity-photo" src="images/volunteer.jpg" width="800" height="520" alt="Volunteers working together to distribute community donation boxes" loading="lazy"></div>
+            <div class="card-content">
+              <div class="card-title"><img src="images/icon-volunteer.svg" alt="" width="36" height="36"><span class="card-number" aria-hidden="true">03</span></div>
+              <h3>Volunteer projects</h3>
+              <p>Put a little time towards a good cause. Work alongside other students on approachable campus and community projects.</p>
+              <dl class="activity-meta"><div><dt>Where</dt><dd>Campus &amp; community</dd></div><div><dt>When</dt><dd>Monthly</dd></div></dl>
+              <a class="text-link" href="#contact" data-topic="volunteering">Ask about volunteering <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="programme-note">I bet there’s something here you’ll like.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT: display-only practice form; no server, storage or sending. -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="label-line"></span> CONTACT</p>
+          <h2 id="contact-title">Your next chapter<br>starts with <em>hello.</em></h2>
+          <p>Wondering which activity to try, or what your first visit might be like? Practise a membership enquiry here.</p>
+          <p>Choose a topic and tell us what you'd like to know. You can also use the sample details to see how it works.</p>
+          <aside class="prototype-notice" aria-labelledby="notice-title">
+            <span class="notice-icon" aria-hidden="true">i</span>
+            <div><h3 id="notice-title">A practice space, just for you.</h3><p>This is a contact form; I’m glad you’re giving it a try.</p></div>
+          </aside>
+        </div>
+        <div class="form-panel">
+          <div class="form-heading"><h3>Membership enquiry</h3><button class="sample-button" type="button" id="sample-details">Try our examples<span aria-hidden="true">↗</span></button></div>
+          <p class="form-help" id="form-help">All fields are required. </p>
+          <form id="enquiry-form" aria-describedby="form-help">
+            <div class="field-row">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="YOUR NAME" maxlength="80" required></div>
+              <div class="field"><label for="email">Student email</label><input id="email" name="email" type="email" placeholder="your emali" maxlength="160" required></div>
+            </div>
+            <div class="field"><label for="topic">I'd like to ask about</label><select id="topic" name="topic" required><option value="">Choose a topic</option value="joining">Joining the club</option><option value="workshops">Skill workshops</option><option value="meetups">Campus meetups</option><option value="volunteering">Volunteer projects</option></select></div>
+            <div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="3" aria-describedby="message-hint" placeholder="What would you like to know before your first activity?" minlength="10" maxlength="1000" required></textarea><span class="field-hint" id="message-hint">10–1,000 characters</span></div>
+            <button class="button button-primary preview-button" type="button" id="preview-enquiry">SENT <span aria-hidden="true">→</span></button>
+            <noscript><p class="noscript-note">This display-only form does not send data.</p></noscript>
+          </form>
+          <p class="form-status" id="form-status" role="status"></p>
+          <section class="enquiry-preview" id="enquiry-preview" aria-labelledby="preview-title" tabindex="-1" hidden>
+            <p class="eyebrow">PREVIEW ONLY · NOT SENT</p>
+            <h3 id="preview-title">Your enquiry preview</h3>
+            <dl><div><dt>Name</dt><dd id="preview-name"></dd></div><div><dt>Email</dt><dd id="preview-email"></dd></div><div><dt>Topic</dt><dd id="preview-topic"></dd></div><div><dt>Message</dt><dd id="preview-message"></dd></div></dl>
+            <p>Nothing has been sent or saved. You can edit the fields and preview again.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="footer-brand" href="#home"><img src="images/club-mark.svg" width="34" height="34" alt=""><span>Campus Connections</span></a>
+      <p>A little curiosity can take you somewhere good.</p>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Campus Connections · ICT2215</p><a href="#">THANK YOU FOR YOU WATCHING</a></div>
+  </footer>
+</body>
+</html>
